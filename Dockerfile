@@ -1,6 +1,6 @@
 FROM node:12-alpine
 
-RUN apk add --no-cache git ruby python
+RUN apk add --no-cache git ruby python make
 
 
 ENV SASS_BINARY_VERSION 4.13.1
