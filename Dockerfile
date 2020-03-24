@@ -1,9 +1,9 @@
-FROM node:9-alpine
+FROM node:12-alpine
 
 RUN apk add --no-cache git ruby python
 
 
-ENV SASS_BINARY_VERSION 4.9.0
+ENV SASS_BINARY_VERSION 4.13.1
 RUN apk add --no-cache --virtual .build-deps-node-sass curl \
    && mkdir -p /node-sass \
    && cd /node-sass \
